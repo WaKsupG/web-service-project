@@ -1,10 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const indexcontroller = require('./../controller/index.controller')
 
-router.get('/',indexcontroller.get)
-router.post('/',indexcontroller.post)
-router.put('/',indexcontroller.put)
-router.delete('/',indexcontroller.delete)
+router.get('/product',product_web_service)
+router.post('/',)
+router.put('/',)
+router.delete('/',)
 
 module.exports = router
