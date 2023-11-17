@@ -1,0 +1,139 @@
+/* ส่วนหัวเว็บ */
+.header {
+    background-color: #17784fe2;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* ลิงก์สู่หน้า Home page */
+.pro {
+    background-color: #ff6200cd;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* สไตล์ hover ของลิงก์ */
+a:hover {
+    color: #000000;
+}
+
+/* กล่องข้อมูลสินค้า */
+.middle {
+    border-radius: 5px;
+    border: 1px solid #000000cd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/* สไตล์แบบฟอร์ม */
+.form {
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* ข้อความกลางหน้า */
+.center {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #177850;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+}
+
+/* ข้อความลบ */
+.remove {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #177850;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    width: 10%;
+    padding: 10px;
+}
+
+/* กล่องรายการสินค้าที่ต้องการลบ */
+.reeadd {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* พื้นหลังหน้าเว็บ */
+.body {
+    background-image: url('4k.jpg');
+}
+
+/* ข้อความภายใน input */
+input {
+    margin: auto;
+}
+
+/* ส่วนท้ายของเว็บ */
+.footer {
+    background-color: #17784fe2;
+    padding: 20px 0;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ส่วนย่อยของ footer */
+.footer-section {
+    margin: auto;
+}
+
+/* หัวเรื่องใน footer */
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* รายการใน footer */
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ลิงก์ใน footer */
+.footer ul li {
+    margin: 5px 0;
+}
+
+/* สไตล์ลิงก์ใน footer */
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* สไตล์ hover ของลิงก์ใน footer */
+.footer ul li a:hover {
+    color: #ff6200cd;
+}
+
+/* รูป banner */
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

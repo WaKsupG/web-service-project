@@ -58,7 +58,6 @@ router.get("/product/:brand", function (req, res) {
   if (!product_id) {
     return res.send({ error: true, message: "Please provide brand." });
   }
-
   //let sql = `SELECT * FROM graphics_cards WHERE band LIKE '%${product_id}%'`
   dbConn.query("SELECT * FROM graphics_cards WHERE brand=?",product_id,function (error, results) {
       if (error || results.length === 0)

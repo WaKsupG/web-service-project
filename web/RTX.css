@@ -1,0 +1,196 @@
+/* รูปแบบส่วนหัวเว็บ */
+.header {
+    background-color: #17784fe2;
+    padding: 15px;
+    text-align: left;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* รูปแบบของลิงก์ (เช่น Home page) */
+.pro {
+    background-color: #ff6200cd;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* รูปแบบของลิงก์เมื่อเมาส์ไปชี้ (hover) */
+a:hover {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* รูปแบบของกล่องแสดงข้อมูลล็อกอิน */
+fieldset {
+    border-radius: 5px;
+    border: 1px solid #000000cd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/* รูปแบบของแบบฟอร์มและช่องกรอกข้อมูล */
+.form {
+    margin-right: 10px;
+}
+
+/* รูปแบบของตัวหนังสือและข้อความตรงกลาง */
+.center {
+    text-align: center;
+    border-radius: 3px;
+    background-color: #17784fe2;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* รูปแบบของพื้นหลังของหน้าเว็บ */
+.body {
+    background-image: url('4k.jpg');
+}
+
+/* รูปแบบของตัวอินพุต (input) */
+input {
+    margin: auto;
+}
+
+/* รูปแบบส่วนท้ายของหน้าเว็บ */
+.footer {
+    background-color: #17784fe2;
+    padding: 20px 0;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* รูปแบบของส่วนของฟุตเตอร์ */
+.footer-section {
+    margin: auto;
+}
+
+/* รูปแบบของหัวของฟุตเตอร์ */
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* รูปแบบของรายการรายการในฟุตเตอร์ */
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* รูปแบบของรายการในฟุตเตอร์ */
+.footer ul li {
+    margin: 5px 0;
+}
+
+/* รูปแบบของลิงก์ในรายการในฟุตเตอร์ */
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* รูปแบบของลิงก์ในรายการในฟุตเตอร์เมื่อเมาส์ไปชี้ (hover) */
+.footer ul li a:hover {
+    color: #ff6200cd;
+}
+
+/* รูปแบบของปุ่ม */
+.button {
+    background-color: #ff6200cd;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* รูปแบบของปุ่มเมื่อเมาส์ไปชี้ (hover) */
+.button:hover {
+    background-color: #000;
+}
+
+/* รูปแบบของส่วนแสดงรายละเอียดสินค้า */
+.product-details {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* รูปแบบของรูปภาพสินค้า */
+.product-image img {
+    max-width: 100%;
+    height: 100%;
+    margin-right: auto;
+}
+
+/* รูปแบบของชื่อสินค้า */
+.product-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* รูปแบบของรายละเอียดรุ่นสินค้า */
+.product-model {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* รูปแบบของราคาสินค้า */
+.product-price {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* รูปแบบของป้ายราคา */
+.price-label {
+    font-weight: bold;
+}
+
+/* รูปแบบของราคาสินค้าที่มีสีพิเศษ */
+.price-value {
+    color: #ff6200cd; /* เปลี่ยนสีตามที่ต้องการ */
+}
+
+/* รูปแบบของตาราง */
+table {
+    background-color: #ffffff;
+    margin-top: auto;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* รูปแบบของแถวในตาราง */
+table tr {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* รูปแบบของรูปภาพแบนเนอร์ */
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

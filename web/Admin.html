@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IHAVEGPU</title> 
+    <style>
+        table, tr, th, td {
+        border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="Search_page.css"/>
+    <link rel="stylesheet" href="Admin.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="body">
+        <h1 class="header">User Account Admin Panel</h1>
+        <br>
+        <a class="pro"href="home_page.html">Home page</a>
+        <a class="pro"href="Search_page.html">Search page</a>
+        <a class="pro"href="Webmanage.html">Manage items</a>
+        <main>
+            <!-- Content area for different admin operations -->
+        <div>
+            <section id="search">
+                <!-- Search users form and results -->
+                <h2>Search Users</h2>
+                <form>
+                    <label for="search-username">Search by Username:</label>
+                    <input type="text" id="search-username" name="search-username" placeholder="Enter username">
+                    <button type="submit">Search</button>
+    
+                    <label for="search-first_name">Search by First name:</label>
+                    <input type="text" id="search-first_name" name="search-first_name" placeholder="Enter First name">
+                    <button type="submit">Search</button>
+    
+                    <label for="search-last_name">Search by Last name:</label>
+                    <input type="text" id="search-last_name" name="search-last_name" placeholder="Enter Last name">
+                    <button type="submit">Search</button>
+    
+                    <label for="search-email">Search by Email:</label>
+                    <input type="email" id="search-email" name="search-email" placeholder="Enter Email">
+                    <button type="submit">Search</button>
+    
+                    <br>
+    
+                    <label for="search-phone_number">Search by Phone number:</label>
+                    <input type="tel" id="search-phone_number" name="search-phone_number" placeholder="Enter Phone number">
+                    <button type="submit">Search</button>
+                </form>
+                <div id="search-results">
+                    <!-- Display search results here (It should be here WIP)-->
+                </div>
+            </section>
+            
+            <section id="add">
+                <!-- Add user form -->
+                <h2>Add User</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+    
+                    <label for="first_name">First name:</label>
+                    <input type="text" id="first_name" name="firstname" required>
+    
+                    <label for="last_name">Last name:</label>
+                    <input type="text" id="last_name" name="lastname" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone_number">Phone number:</label>
+                    <input type="tel" id="phone_number" name="phonenumber" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Add User</button>
+                </form>
+            </section>
+            <section id="delete">
+                <!-- Delete user form -->
+                <h2>Delete User</h2>
+                <form>
+                    <label for="delete-username">Username to Delete:</label>
+                    <input type="text" id="delete-username" name="delete-username" required>
+                    <button type="submit">Delete User</button>
+            </section>
+            
+            <!-- Sections for updating and deleting user accounts can be added similarly (WIP) -->
+        </main>
+        <!--Just a footer if you know you know :)-->
+    <footer class="footer">
+        <div class="footer-section" id="pop">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Report an Issue</a></li>
+                <li><a href="#">Request Assistance</a></li>
+                <li><a href="#">Technical Support</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Customer Account Info</a></li>
+                <li><a href="#">Product Delivery</a></li>
+                <li><a href="#">Product Returns</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#">Contact Information</a></li>
+                <li><a href="#">Customer Service Center</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Payment Options</h3>
+            <ul>
+                <li><a href="#">Credit Card Payments</a></li>
+                <li><a href="#">Bank Transfers</a></li>
+                <li><a href="#">Bank Account Details</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -38,6 +38,53 @@ router.get("/", function (req, res) {
     return res.send({ error: true, message: "hello this is admin page" });
   });
 
+// ตรวจสอบผู้ใช้จากฐานข้อมูล
+function authenticateUser(email, password, callback) {
+    dbConn.query(
+      "SELECT * FROM admin_info WHERE email = ? AND password = ?",
+      [email, password],
+      function (error, results) {
+        if (error) {
+          return callback(error, null);
+        }
+  
+        if (results.length === 1) {
+          // พบผู้ใช้ที่ตรงกับ email และ password
+          const user = {
+            id: results[0].id,
+            email: results[0].email
+          };
+          return callback(null, user);
+        } else {
+          // ไม่พบผู้ใช้
+          return callback(null, null);
+        }
+      }
+    );
+  }
+
+  // Middleware สำหรับการตรวจสอบการรับรองตัวตนของผู้ใช้
+function authenticate(req, res, next) {
+  const { email, password } = req.body;
+
+  // ตรวจสอบว่ามี email และ password ใน request
+  if (!email || !password) {
+    return res.status(400).json({ error: "Bad Request: Missing email or password" });
+  }
+
+  // ตรวจสอบผู้ใช้จากฐานข้อมูล
+  authenticateUser(email, password, function (error, user) {
+    if (error || !user) {
+      return res.status(401).json({ error: "Unauthorized: Invalid credentials" });
+    }
+
+    req.user = user; // เก็บข้อมูลผู้ใช้ใน request object
+    next();
+  });
+}
+router.post('/login', authenticate, function (req, res) {
+    res.json({ success: true, user: req.user });
+});
 // Retrieve all products from the database
 router.get("/product", function (req, res) {
     // res.header("Access-Control-Allow-Origin", "http://localhost:3200")

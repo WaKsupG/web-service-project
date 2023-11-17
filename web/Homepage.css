@@ -1,0 +1,135 @@
+/* CSS สำหรับส่วนหัว (Header) */
+header {
+    background-color: #17784fe2; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    padding: 30px; /* ระยะห่างขอบ */
+    font-family: sans-serif; /* แบบอักษร */
+}
+
+#H {
+    font-size: 15px; /* ขนาดตัวอักษร */
+}
+
+/* CSS สำหรับส่วนตัวเนื้อหา (Body) */
+.body {
+    background-image: url('4k.jpg'); /* พื้นหลัง */
+}
+
+/* CSS สำหรับส่วนหัว (Header) */
+/* เริ่มต้นส่วนของเนื้อหาหน้าเว็บ */
+head {
+    display: flex;
+    justify-content: space-between; /* จัดการระยะห่างระหว่างองค์ประกอบ */
+}
+
+.Head a {
+    text-decoration: none; /* ลบขีดเส้นใต้ข้อความลิงค์ */
+    color: white; /* สีข้อความลิงค์ */
+}
+
+a:hover {
+    color: #ff6200cd; /* เปลี่ยนสีข้อความลิงค์เมื่อเม้าส์ hover */
+}
+
+nav li {
+    display: inline; /* จัดเรียงแสดงองค์ประกอบแบบ inline */
+    margin-right: 20px; /* ระยะห่างขวา */
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end; /* จัดข้อความไปด้านขวา */
+    align-items: center; /* จัดกลางตามแนวดิ่ง */
+}
+
+.nav-right ul {
+    list-style: none; /* ไม่แสดงเครื่องหมายลำดับรายการ */
+    padding: 0; /* ลบระยะขอบของรายการ */
+}
+
+.nav-right li {
+    margin-right: 20px; /* ระยะห่างระหว่างรายการเมนู */
+}
+
+.Head {
+    float: right; /* จัดเนื้อหาทางขวา */
+}
+
+/* CSS สำหรับส่วนแบนเนอร์ (Banner) */
+.backG {
+    background-image: url("banner\ \(2\).jpg"); /* พื้นหลัง */
+    height: 400px; /* ความสูง */
+    background-size: 100%; /* ปรับขนาดพื้นหลังให้เต็มหน้าจอ */
+    background-position: center; /* จัดตำแหน่งตรงกลาง */
+}
+
+/* CSS สำหรับส่วนเกี่ยวกับเรา (About Us) */
+.aboutus {
+    text-align: center; /* จัดข้อความกึ่งกลาง */
+}
+
+.about-title {
+    color: #ff6200cd; /* สีข้อความหัวข้อ */
+    font-size: 2rem; /* ขนาดตัวอักษรของหัวข้อ */
+}
+
+.about-d {
+    color: #beb8b8; /* สีข้อความเนื้อหา */
+    margin: 3rem; /* ระยะห่างขอบข้อความ */
+    font-size: 1.3rem; /* ขนาดตัวอักษรของเนื้อหา */
+}
+
+.all {
+    padding: 0 10rem; /* ระยะห่างข้างซ้ายและขวาของส่วนรวม */
+}
+
+.img {
+    margin: 3rem 0; /* ระยะห่างข้างบนและล่างของรูปภาพ */
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* กำหนดความกว้างของรูปภาพให้เต็มหน้าจอ */
+}
+
+/* CSS สำหรับส่วนท้าย (Footer) */
+.footer {
+    background-color: #17784fe2; /* สีพื้นหลัง */
+    padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
+    text-align: center; /* จัดข้อความกึ่งกลาง */
+    font-family: sans-serif; /* แบบอักษร */
+    color: #fff; /* สีข้อความ */
+    margin: 0; /* ระยะขอบภายนอก */
+    display: flex; /* แสดงเนื้อหาแบบ flexbox */
+    justify-content: space-between; /* จัดเรียงระยะห่างระหว่างองค์ประกอบ */
+}
+
+.footer-section {
+    margin: auto; /* จัดกึ่งกลางตามแนวนอน */
+}
+
+.footer h3 {
+    font-size: 20px; /* ขนาดตัวอักษรของหัวข้อ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของหัวข้อ */
+}
+
+.footer ul {
+    list-style-type: none; /* ไม่แสดงเครื่องหมายลำดับรายการ */
+    padding: 0; /* ลบระยะขอบของรายการ */
+}
+
+.footer ul li {
+    margin: 5px 0; /* ระยะห่างด้านบนและล่างของรายการ */
+}
+
+.footer ul li a {
+    color: #fff; /* สีข้อความลิงค์ */
+    text-decoration: none; /* ลบขีดเส้นใต้ข้อความลิงค์ */
+    transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีเวลา hover */
+}
+
+.footer ul li a:hover {
+    color: #ff6200cd; /* เปลี่ยนสีข้อความลิงค์เมื่อ hover */
+}

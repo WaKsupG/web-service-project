@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IHAVEGPU</title> 
+    <style>
+        table, tr, th, td {
+        border: 1px solid black;
+        }
+    </style>
+    <!--Link CSS form outsides files-->
+    <link rel="stylesheet" href="Search_page.css"/>
+    <!--Im used CSS form uhhh some website Im for got it btw I used for search icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="body">
+        <!--Header button like homepage search login-->
+        <h1 class="header">Search</h1>
+        <br>
+        <a class="pro"href="Homepage.html">Home page</a>
+        <a class="pro"href="Search_page.html">Search</a>
+        <a class="pro"href="Customer_login.html">Login</a>
+    <form id="searchForm">
+        <br>
+        <br>
+        <fieldset>
+        <legend class="center">Search items</legend>
+            <label for="search-box">Search</label>
+            <input type="text" name="search_box" class="form"  placeholder="Enter your search term...">
+            <button type="submit" title="click to search"><i class="fa fa-search"></i></button>
+            <select name="All products" id="">
+                <option value="All">All product</option>
+                <option value="R40">40 Serie</option>
+                <option value="R30">30 Serie</option>
+                <option value="R20">20 Serie</option>
+                <option value="R10">10 Serie</option>
+            </select>
+            <select name="All products" id="">
+                <option value="All">All price ฿</option>
+                <option value="R40"> 0-5,000  </option>
+                <option value="R30">5,001-10,000</option>
+                <option value="R20">10,001-30,000</option>
+                <option value="R10">30,001 or higher</option>
+            </select><select name="All products" id="">
+                <option value="All">All Released</option>
+                <option value="R40">Oldest</option>
+                <option value="R30">Newest</option>
+                <option value="R20">Incomine</option>
+            </select>
+            <!--This filter function is work in progress!!!!!!!!!!!-->
+            <!--<label for="filterCheckbox" id="filterButtonLabel" class="button" title="Hover to filter"><i class="fa fa-filter"></i>Filter</label>
+            <div class="hidden-filter">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                    <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                    <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                </div>
+                <div class="hidden-filter">
+                    <div class="filterDiv cars">BMW</div>
+                    <div class="filterDiv colors fruits">Orange</div><div class="filterDiv cars">Volvo</div>
+                    <div class="filterDiv colors">Red</div>
+                    <div class="filterDiv cars">Ford</div>
+                    <div class="filterDiv colors">Blue</div>
+                    <div class="filterDiv animals">Cat</div>
+                    <div class="filterDiv animals">Dog</div>
+                    <div class="filterDiv fruits">Melon</div>
+                    <div class="filterDiv fruits animals">Kiwi</div>
+                    <div class="filterDiv fruits">Banana</div>
+                    <div class="filterDiv fruits">Lemon</div>
+                    <div class="filterDiv animals">Cow</div>
+                </div>
+            </div>-->
+            <!--This filter function is work in progress!!!!!!!!!!!-->
+        </fieldset>
+    </form>
+    <!--This section is welcome banner-->
+    <div class="welcome-banner" id="tran-img"><marquee><h1>Welcome to Our Store</h1></marquee></div>
+    <div class="round-border">
+        <!--This section is B E S T products sell!!!!-->
+        <h1 id="rec-products">Best seller Products</h1>
+        <!--This is function that make the banner auto scolling-->
+        <script src="Search_page.js"></script>
+        <div class="banner-container">
+            <div class="banner" id="banner">
+                <div class="banner-item"><a href="30_5.html" target="_blank"><img class="banner-rec" src="3050.jpg" alt="RTX 3050"></a></div>
+                <div class="banner-item"><a href="30_1.html" target="_blank"><img class="banner-rec" src="3060ti.jpg" alt="RTX 3060ti"></a></div>
+                <div class="banner-item"><a href="40_3.html" target="_blank"><img class="banner-rec" src="4060ti.jpg" alt="RTX 4060ti"></a></div>
+            </div>
+        </div>
+        <!--Just a group of button in fact it just a previous and next button to see each products-->
+        <div class="button-group">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+    <div class="warp">
+        <!-- product card for each different kind of products-->
+        <div class="product-card">
+            <img src="4090.jpg" class="center-img">
+            <h2 class="product-title">RTX 4090</h2>
+            <p class="product-description">Memory Speed: 21 Gbps	Memory Size: 24 GB
+                Memory Type: GDDR6X	CUDA Core / Compute Units / Stream Processor: 16384
+                Length: 280 mm	Width: 140 mm
+                Height: 43 mm	Max Resolution: 7680 x 4320</p>
+            <p class="product-price">฿75,990</p>
+            <a href="40_4.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+        </div>
+    <div class="product-card">
+        <img src="4070ti.jpg" class="center-img">
+        <h2 class="product-title">RTX 4070ti</h2>
+        <p class="product-description">Memory Size: 12 GB	Memory Type: GDDR6X
+            CUDA Core / Compute Units / Stream Processor: 7680	Length: 336 mm
+            Width: 140 mm</p>
+        <p class="product-price">฿31,990</p>
+        <a href="40_2.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>  
+    <div class="product-card">
+        <img src="4070.jpg" class="center-img">
+        <h2 class="product-title">RTX 4070</h2>
+        <p class="product-description">Memory Size: 12 GB	Memory Type: GDDR6X
+            CUDA Core / Compute Units / Stream Processor: 5888	Length: 305 mm
+            Width: 119 mm	Height: 65 mm</p>
+        <p class="product-price">฿19,990</p>
+        <a href="40_1.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="4060ti.jpg" class="center-img">
+        <h2 class="product-title">RTX 4060ti</h2>
+        <p class="product-description">Memory Size: 8 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 4352	Length: 301 mm
+            Width: 128 mm	Height: 56 mm</p>
+        <p class="product-price">฿15,990</p>
+        <a href="40_3.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="4060.jpg" class="center-img">
+        <h2 class="product-title">RTX 4060</h2>
+        <p class="product-description">	Memory Speed: 17 Gbps	Memory Size: 8 GB
+            Memory Type: GDDR6	CUDA Core / Compute Units / Stream Processor: 3072
+            Length: 227 mm	Width: 123 mm
+            Height: 50 mm	Max Resolution: 7680 x 4320</p>
+        <p class="product-price">฿12,990</p>
+        <a href="40_5.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="3080ti.jpg" class="center-img">
+        <h2 class="product-title">RTX 3080ti</h2>
+        <p class="product-description">Memory Size: 12 GB	Memory Type: GDDR6X
+            CUDA Core / Compute Units / Stream Processor: 10240	Length: 300 mm
+            Width: 135 mm	Height: 60 mm</p>
+        <p class="product-price">฿42,990</p>
+        <a href="30_2.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="3070ti.jpg" class="center-img">
+        <h2 class="product-title">RTX 3070ti</h2>
+        <p class="product-description">Memory Size: 8 GB	Memory Type: GDDR6X
+            CUDA Core / Compute Units / Stream Processor: 6144	Length: 320 mm
+            Width: 129 mm	Height: 55 mm
+            Max Resolution: 7680 x 4320	DirectX: 12 Ultimate</p>
+        <p class="product-price">฿18,990</p>
+        <a href="30_3.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="3070.jpg" class="center-img">
+        <h2 class="product-title">RTX 3070</h2>
+        
+        <p class="product-description">	Memory Speed: 14 Gbps	Memory Size: 8 GB
+            Memory Type: GDDR6	CUDA Core / Compute Units / Stream Processor: 5888
+            Length: 267 mm	Width: 135 mm
+            Height: 52 mm	Max Resolution: 7680 x 4320</p>
+        <p class="product-price">฿18,990</p>
+        <a href="30_4.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="3060ti.jpg" class="center-img">
+        <h2 class="product-title">RTX 3060ti</h2>
+        <p class="product-description">	Memory Speed: 19 Gbps	Memory Size: 8 GB
+            Memory Type: GDDR6X	CUDA Core / Compute Units / Stream Processor: 4864
+            Length: 329 mm	Width: 130 mm
+            Height: 61 mm	Max Resolution: 7680 x 4320</p>
+        <p class="product-price">฿12,990</p>
+        <a href="30_1.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="3050.jpg" class="center-img">
+        <h2 class="product-title">RTX 3050</h2>
+        <p class="product-description">Memory Size: 8 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 2560	Length: 236 mm
+            Width: 126 mm	Height: 43 mm
+            Max Resolution: 7680 x 4320	DirectX: 12 Ultimate</p>
+        <p class="product-price">฿8,990</p>
+        <a href="30_5.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="2060SU.jpg" class="center-img">
+        <h2 class="product-title">RTX 2060 Super</h2>
+        <p class="product-description">	Memory Size: 6 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 1920	Length: 220 mm
+            Width: 113 mm	Height: 40 mm
+            Max Resolution: 7680 x 4320	DirectX: 12</p>
+        <p class="product-price">฿18,990</p>
+        <a href="20_3.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="2060.2.jpg" class="center-img">
+        <h2 class="product-title">RTX 2060</h2>
+        <p class="product-description">	Memory Size: 12 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 2176	Length: 242 mm
+            Width: 130 mm	Height: 53 mm
+            Max Resolution: 7680 x 4320	DirectX: 12</p>
+        <p class="product-price">฿12,990</p>
+        <a href="20_2.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="2060.1.jpg" class="center-img">
+        <h2 class="product-title">RTX 2060</h2>
+        <p class="product-description">	Memory Size: 8 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 2176	Length: 265 mm
+            Width: 121 mm	Height: 40 mm
+            Max Resolution: 7680 x 4320	DirectX: 12</p>
+        <p class="product-price">฿12,990</p>
+        <a href="20_1.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="1660S.jpg" class="center-img">
+        <h2 class="product-title">GTX 1660 Super</h2>
+        <p class="product-description">Memory Size: 6 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 1408	Length: 206 mm
+            Width: 124 mm	Height: 46 mm
+            Max Resolution: 7680 x 4320	DirectX Support: 12</p>
+        <p class="product-price">฿7,990</p>
+        <a href="10_3.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="1650LP.jpg" class="center-img">
+        <h2 class="product-title">GTX 1650LP</h2>
+        <p class="product-description">Memory Speed: 12 Gbps	Memory Size: 4 GB
+            Memory Type: GDDR6	CUDA Core / Compute Units / Stream Processor: 896
+            Length: 174 mm	Width: 126 mm
+            Height: 39 mm	Max Resolution: 7680 x 4320</p>
+        <p class="product-price">฿5,990</p>
+        <a href="10_4.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="1650.jpg" class="center-img">
+        <h2 class="product-title">GTX 1650</h2>
+        <p class="product-description">Memory Speed: 8 Gbps	Memory Size: 4 GB
+            Memory Type: GDDR6	CUDA Core / Compute Units / Stream Processor: 896
+            Length: 182 mm	Width: 121 mm
+            Height: 39 mm	Max Resolution: No</p>
+        <p class="product-price">฿5,690</p>
+        <a href="10_1.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    <div class="product-card">
+        <img src="1630.jpg" class="center-img">
+        <h2 class="product-title">GTX 1630</h2>
+        <p class="product-description">	Memory Size: 4 GB	Memory Type: GDDR6
+            CUDA Core / Compute Units / Stream Processor: 512	Length: 178 mm
+            Width: 112 mm	Height: 39 mm
+            Max Resolution: 7680 x 4320	DirectX Support: 12</p>
+        <p class="product-price">฿3,990</p>
+        <a href="10_2.html" target="_blank"><button type="button" title="Detail for product">Details</button></a>
+    </div>
+    </div>
+    <!--Here it banner under the products-->
+    <img src="banner.jpg" alt="bannerr" class="bannerr" >
+    <!--Yeah that it footer again-->
+    <footer class="footer">
+        <div class="footer-section" id="pop">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Report an Issue</a></li>
+                <li><a href="#">Request Assistance</a></li>
+                <li><a href="#">Technical Support</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Customer Account Info</a></li>
+                <li><a href="#">Product Delivery</a></li>
+                <li><a href="#">Product Returns</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#">Contact Information</a></li>
+                <li><a href="#">Customer Service Center</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"id="pop">
+            <h3>Payment Options</h3>
+            <ul>
+                <li><a href="#">Credit Card Payments</a></li>
+                <li><a href="#">Bank Transfers</a></li>
+                <li><a href="#">Bank Account Details</a></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+</html>
