@@ -3,9 +3,9 @@ const axios = require("axios").default;
 const express = require("express");
 const router = express.Router();
 
-let searchURL = "http://localhost:8024/admin/login";
+let searchURL = "http://localhost:8024/customer/login";
 
-let getAdmin = async () => {
+let getUser = async () => {
   try {
     let response = await axios.get(searchURL, { responseType: "json" });
     console.log(`Use Async/Await`);
@@ -18,7 +18,7 @@ let getAdmin = async () => {
 };
 
 router.get("/", async (req, res) => {
-  res.json(await getAdmin());
+  res.json(await getUser());
 });
 
 module.exports = router;
